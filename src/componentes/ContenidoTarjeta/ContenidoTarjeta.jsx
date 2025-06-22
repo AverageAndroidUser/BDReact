@@ -1,7 +1,14 @@
 import React from 'react'
 
-export const ContenidoTarjeta = () => {
+export const ContenidoTarjeta = ({Imagen}) => {
   return (
-    <div>ContenidoTarjeta</div>
+    <div>
+      <img
+        src={Imagen}
+        alt="Solución BD"
+        className="img-fluid rounded"
+        style={{ maxHeight: '200px', objectFit: 'contain' }}
+      />
+    </div>
   )
 }

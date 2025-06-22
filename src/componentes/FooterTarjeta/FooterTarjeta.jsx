@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const FooterTarjeta = () => {
+export const FooterTarjeta = ({Enunciado}) => {
   return (
-    <div>FooterTarjeta</div>
+    <div>
+      {Enunciado}
+    </div>
   )
 }

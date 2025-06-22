@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const EncabezadoTarjeta = () => {
+export const EncabezadoTarjeta = ({Titulo}) => {
   return (
-    <div>EncabezadoTarjeta</div>
+    <div>{Titulo}</div>
   )
 }
