@@ -46,13 +46,13 @@ function App() {
         <h1 className="text-center mb-4">BD React</h1>
 
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
-          {listaEjercicios.map((problema, index) => (
+          {listaEjercicios.map((i, index) => (
             <div className="col" key={index}>
               <Tarjeta
-                Titulo={problema.Titulo}
-                Imagen={problema.Imagen}
-                Enunciado={problema.Enunciado}
-                onVerMas={() => abrirModal(problema)}
+                Titulo={i.Titulo}
+                Imagen={i.Imagen}
+                Enunciado={i.Enunciado}
+                onVerMas={() => abrirModal(i)}
               />
             </div>
           ))}
